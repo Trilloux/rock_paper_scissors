@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width:auto;
+    font-family: Impact, fantasy;
+    color: #e3cc20;
+}
+
+.cointainer{
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+
+#head, h1{
+display: flex;
+flex-direction: row;
+background-color: black;
+width: 100%;
+height: 150px;
+text-align: center;
+align-items: center;
+justify-content: center;
+}
+
+.animate-text {
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 60px;
+    color: #e3cc20;
+  }
+  
+  @keyframes revealText {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
+  /* Iestatījums animācijai */
+  .animate-text {
+    animation: revealText 5s forwards;
+  }
+
+  #start_game{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 80px;
+    background-color: #263142;
+    
+  }
+
+  .new_game{
+    background-color: #263142;
+    color: #e3cc20;
+    width: 300px;
+    height: 40px;
+    font-size: 30px;
+    font-family: Impact, fantasy;
+    border-radius: 15px;
+  }
+  
+
+#board{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+    width: 100%;
+    height: 200px;
+    background-color: #263142;
+}
+p#p_score, p#c_score{
+  margin-left: 50px;
+  margin-right: 55px;
+  font-size: 40x;
+}
+
+#score{
+    display:flex;
+    
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    background-color: #263142;
+}
+
+/*#c_score, #p_score{
+  
+  align-items: center;
+  justify-content: center;
+}
+*/
+
+#player, #computer{
+  display: block;
+  font-size: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
+  
+}
+
+
+
+#game{
+    display: flex;
+   
+    width: 100%;
+    height: 200px;
+    background-color: #263142;
+    justify-content: center;
+    align-items: center;
+}
+.player_buttons{
+  
+    font-size: 120px;
+    width: 150px;
+    height: 150px;
+    background-color: #263142;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+
+#footer{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: #263142;
+    justify-content: center;
+    align-items: center;
+
+}
+
